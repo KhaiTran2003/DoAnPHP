@@ -1,0 +1,23 @@
+/* CSS cho hiệu ứng hover */
+.clickable-card {
+    cursor: pointer;  /* Chuyển con trỏ chuột thành hình tay khi di chuột vào */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clickable-card:hover {
+    transform: scale(1.05);  /* Phóng to nhẹ khi hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Tạo hiệu ứng bóng khi hover */
+}
+
+.clickable-card:active {
+    transform: scale(1.02);  /* Phóng to nhẹ khi click */
+}
+
+/* Thêm hiệu ứng cho icon */
+.icon-shape {
+    transition: transform 0.2s ease;
+}
+
+.icon-shape:hover {
+    transform: scale(1.1); /* Phóng to icon khi hover */
+}

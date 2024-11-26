@@ -1,0 +1,62 @@
+    /* Phân trang - Chỉnh sửa các liên kết phân trang */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 20px 0;
+}
+
+/* Các phần tử phân trang */
+.page-item {
+    margin: 0 5px;
+}
+
+/* Các liên kết trong phân trang */
+.page-link {
+    padding: 8px 16px;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Khi người dùng hover qua các liên kết */
+.page-link:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Làm nổi bật trang hiện tại */
+.page-item.active .page-link {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+    font-weight: bold;
+}
+
+/* Tùy chỉnh các trang không có liên kết, chỉ có dấu chấm hoặc dấu chấm ba chấm */
+.page-item.disabled .page-link {
+    color: #ccc;
+    pointer-events: none;
+}
+    /* Màu nền và chữ cho trang hiện tại */
+.pagination .page-item.active .page-link {
+    background-color: #007bff; /* Màu nền của trang hiện tại */
+    color: white; /* Màu chữ của trang hiện tại */
+    border-color: #007bff; /* Màu viền của trang hiện tại */
+}
+
+/* Màu sắc khi hover các trang */
+.pagination .page-item:hover .page-link {
+    background-color: #f0f0f0; /* Màu nền khi hover */
+    color: #007bff; /* Màu chữ khi hover */
+}
+
+/* Màu sắc các trang khác */
+.pagination .page-item .page-link {
+    color: #007bff; /* Màu chữ của các trang khác */
+}
